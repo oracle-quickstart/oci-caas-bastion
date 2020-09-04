@@ -2,6 +2,16 @@
 # Cookbook:: oci_caas_bastion
 # Recipe:: clamav
 #
+
+# run clamscan once a day
+cron 'run_clamscan' do
+  action :create
+  minute '7'
+  hour '1'
+  user 'root'
+  command 'clamscan -r / -i -o -l /var/log/clamav/clamscan.log'
+end
+
 include_recipe 'yum-epel'
 include_recipe "clamav::services"
 
