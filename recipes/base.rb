@@ -25,3 +25,11 @@ end
 service 'chronyd' do
   action :enable
 end
+
+template "#{node['ossec']['dir']}/etc/shared/agent.conf" do
+  source 'wazuh_local_files.conf'
+  cookbook 'oci_caas_bastion'
+  owner 'root'
+  group 'ossec'
+  action :create
+end
