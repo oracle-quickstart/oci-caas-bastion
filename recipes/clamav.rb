@@ -7,9 +7,9 @@
 cron 'run_clamscan' do
   action :create
   minute '7'
-  hour '1'
+  hour '2'
   user 'root'
-  command 'clamscan -r / -i -o -l /var/log/clamav/clamscan.log'
+  command 'clamscan -r / -i -o --exclude "^/var/lib/suricata/update/cache" --exclude "^/usr/bin/pnscan" 2> /var/log/clamscan.errors | logger -t clamd'
 end
 
 include_recipe 'yum-epel'
@@ -35,7 +35,7 @@ package_list = case node['platform']
                  end
                end
 
-package 'clamav-server'
+package 'clamd'
 
 package_list.each do |pkg|
   package "install #{pkg}" do
