@@ -7,7 +7,6 @@ version '0.2.0'
 chef_version '>= 16.0'
 
 depends 'firewalld'
-depends 'tomcat'
 depends 'wazuh_agent'
 depends 'clamav'
 
