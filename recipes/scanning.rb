@@ -38,3 +38,11 @@ cron 'Local nmap vulscan' do
   user 'nobody'
   command '/usr/bin/nmap -Pn -sV --script=/opt/scipag_vulscan/vulscan.nse localhost | logger -t nmap_scipag_vulscan'
 end
+
+cron 'External nmap vulscan' do
+  action :create
+  minute '57'
+  hour '3'
+  user 'nobody'
+  command "/usr/bin/nmap -Pn -sV --script=/opt/scipag_vulscan/vulscan.nse #{node['external_fqdn']} | logger -t nmap_scipag_vulscan_external"
+end
