@@ -109,8 +109,6 @@ X11Forwarding yes
 #UsePrivilegeSeparation sandbox
 #PermitUserEnvironment no
 #Compression delayed
-#ClientAliveInterval 0
-#ClientAliveCountMax 3
 #ShowPatchLevel no
 #UseDNS yes
 #PidFile /var/run/sshd.pid
@@ -118,6 +116,10 @@ X11Forwarding yes
 #PermitTunnel no
 #ChrootDirectory none
 #VersionAddendum none
+
+# Force a 15 minute timeout for idle SSH connections
+ClientAliveInterval 900
+ClientAliveCountMax 0
 
 # no default banner path
 #Banner none
