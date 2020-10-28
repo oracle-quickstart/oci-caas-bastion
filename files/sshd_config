@@ -117,8 +117,8 @@ X11Forwarding yes
 #ChrootDirectory none
 #VersionAddendum none
 
-# Force a 15 minute timeout for idle SSH connections
-ClientAliveInterval 900
+# Force a 5 minute timeout for idle SSH connections
+ClientAliveInterval 300
 ClientAliveCountMax 0
 
 # no default banner path
