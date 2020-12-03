@@ -2,7 +2,6 @@
 # Cookbook:: oci_caas_bastion
 # Recipe:: firewalld
 #
-# Copyright:: 2020, The Authors, All Rights Reserved.
 
 firewalld_rich_rule 'ssh_add' do
   zone 'public'

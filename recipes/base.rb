@@ -2,7 +2,6 @@
 # Cookbook:: oci_caas_bastion
 # Recipe:: base
 #
-# Copyright:: 2020, The Authors, All Rights Reserved.
 
 cron 'chef_client' do
   action :create
