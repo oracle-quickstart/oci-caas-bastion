@@ -1,7 +1,7 @@
 name 'oci_caas_bastion'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
-license 'All Rights Reserved'
+license 'The Universal Permissive License (UPL), Version 1.0'
 description 'Installs/Configures oci_caas_bastion'
 version '0.3.0'
 chef_version '>= 16.0'

@@ -2,7 +2,6 @@
 # Cookbook:: oci_caas_bastion
 # Recipe:: totp
 #
-# Copyright:: 2020, The Authors, All Rights Reserved.
 
 include_recipe 'yum-epel'
 
