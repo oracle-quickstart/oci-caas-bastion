@@ -1,14 +1,13 @@
 name 'oci_caas_bastion'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
-license 'The Universal Permissive License (UPL), Version 1.0'
+license 'Universal Permissive License v1.0'
 description 'Installs/Configures oci_caas_bastion'
-version '0.3.0'
+version '0.4.0'
 chef_version '>= 16.0'
 
+depends 'oci_caas_base'
 depends 'firewalld'
-depends 'wazuh_agent'
-depends 'clamav'
 depends 'selinux_policy'
 
 # The `issues_url` points to the location where issues for this cookbook are
