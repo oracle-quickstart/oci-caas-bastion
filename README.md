@@ -47,6 +47,6 @@ of your choice. If you fail to do so, you will lose access to the host.
 ## License
 Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
 
-Licensed under the Universal Permissive License 1.0 or Apache License 2.0.
+Licensed under the Universal Permissive License 1.0
 
 See [LICENSE](LICENSE) for more details.
