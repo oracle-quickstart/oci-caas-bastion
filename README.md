@@ -45,7 +45,7 @@ After the first login, you will be prompted to set up an authenticator program
 of your choice. If you fail to do so, you will lose access to the host.
 
 ## License
-Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
+Copyright (c) 2020, 2021 Oracle and/or its affiliates. All rights reserved.
 
 Licensed under the Universal Permissive License 1.0
 
